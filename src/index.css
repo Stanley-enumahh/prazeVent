@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* <weight>: 100 */
+:root {
+  --color-primary: #002b56;
+  --color-secondary: #017bf6;
+  --color-deep: #001427;
+  --color-green: #099137;
+}
+.buttons {
+  border-radius: 50px;
+  padding: 10px 18px 10px 18px;
+  color: white;
+  font-weight: 400;
+}
+
+.brand-blue-mid {
+  color: var(--color-primary);
+}
+.brand-blue-deep {
+  background-color: var(--color-primary);
+}
+.brand-blue-light {
+  background-color: var(--color-secondary);
+}
+.brand-blue-light-text {
+  color: var(--color-secondary);
+}
+.brand-green-bg {
+  background-color: var(--color-green);
+}
+
+.nav-link.active {
+  background-color: var(--color-deep);
+}
+
+.hero-header {
+  font-weight: 600;
+}
+.button-weight {
+  font-weight: 400;
+}
+
+.single-business {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 176px;
+  border-radius: 10px;
+  border: 1px solid #e3e5e8;
+  gap: 0.5rem;
+}
+.single-business-logo-deskeop {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.light-font {
+  font-weight: 400;
+  font-size: 16px;
+}
+.diagonal-cut {
+  rotate: 15deg;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.transition {
+  transition: ease-in 0.5s;
+}
