@@ -8,10 +8,9 @@ import { FindBusinessContainer } from "../HomePage/FindBusinessContainer";
 import { WhyLeaveAReview } from "../HomePage/WhyLeaveAReview";
 import { YourOpinionContainer } from "../HomePage/YourOpinionContainer";
 import { Footer } from "../../components/Footer";
-import Dialog from "@mui/material/Dialog";
 import { useState } from "react";
 import { Login } from "../Login";
-import { Button, Flex, Modal } from "antd";
+import { Modal } from "antd";
 import { FAQs } from "./FAQs";
 
 export default function HomePage() {
@@ -33,6 +32,8 @@ export default function HomePage() {
       <HeroHome />
       <Modal
         style={{
+          // position: "absolute",
+          // right: "0px",
           marginTop: "150px",
           marginBottom: "100px",
           borderRadius: "18px",
@@ -48,14 +49,6 @@ export default function HomePage() {
       >
         <Login handleCloseModal={handleCloseModal} />
       </Modal>
-      {/* <Dialog
-        handleCloseModal={handleCloseModal}
-        onClose={handleCloseModal}
-        open={open}
-        className="rounded-5xl"
-      >
-        <Login handleCloseModal={handleCloseModal} />
-      </Dialog> */}
 
       <HowItWorks />
       <div className="flex flex-col gap-0">

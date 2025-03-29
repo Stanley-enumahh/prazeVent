@@ -6,11 +6,15 @@ import "./index.css";
 import HomePage from "./Pages/Homepage/HomePage.jsx";
 import SingleBusinessPage from "./Pages/SingleBusinessPage/SingleBusinessPage.jsx";
 import ExploreBusinessPage from "./Pages/ExploreBuinesses/ExploreBusinessPage.jsx";
+import SupportPage from "./Pages/Support/SupportPage.jsx";
+import { CategoryPage } from "./Pages/Category/CategoryPage.jsx";
 
 const router = createBrowserRouter([
-  { index: true, path: "/", element: <HomePage /> },
+  { path: "/", element: <HomePage /> },
   { path: "/explore-businesses", element: <ExploreBusinessPage /> },
-  { path: "/stripe", element: <SingleBusinessPage /> },
+  { index: true, path: "/stripe", element: <SingleBusinessPage /> },
+  { path: "/support", element: <SupportPage /> },
+  { path: "/business-category", element: <CategoryPage /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

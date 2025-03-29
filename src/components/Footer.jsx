@@ -4,6 +4,7 @@ import { RiLinkedinFill } from "react-icons/ri";
 import { RiTwitterXLine } from "react-icons/ri";
 import { GrFacebookOption } from "react-icons/gr";
 import praxeVentLogo from "../assets/Frame 52997.png";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -22,16 +23,16 @@ export const Footer = () => {
             <div className="flex flex-col gap-4">
               <p className="light-font text-[#E6F2FE]">Follow us</p>
               <div className="flex flex-row gap-3">
-                <span className="brand-blue-light rounded-full w-[53px] h-[53px] text-white flex items-center justify-center">
+                <span className="brand-blue-light rounded-full w-[53px] h-[53px] text-white flex items-center cursor-pointer justify-center">
                   <FaInstagram size={22} />
                 </span>
-                <span className="brand-blue-light flex rounded-full w-[53px] h-[53px] text-white items-center justify-center">
+                <span className="brand-blue-light flex rounded-full w-[53px] h-[53px] text-white items-center cursor-pointer justify-center">
                   <RiLinkedinFill size={22} />
                 </span>
-                <span className="brand-blue-light flex rounded-full w-[53px] h-[53px] text-white items-center justify-center">
+                <span className="brand-blue-light flex rounded-full w-[53px] h-[53px] text-white items-center cursor-pointer justify-center">
                   <RiTwitterXLine size={22} />
                 </span>
-                <span className="brand-blue-light flex rounded-full w-[53px] h-[53px] text-white items-center justify-center">
+                <span className="brand-blue-light flex rounded-full w-[53px] h-[53px] text-white items-center cursor-pointer  justify-center">
                   <GrFacebookOption size={22} />
                 </span>
               </div>
@@ -43,11 +44,13 @@ export const Footer = () => {
             <div className="flex flex-col gap-4">
               <h1>Quick links</h1>
               <ul className="text-[#A9C1DA] light-font flex flex-col gap-4">
-                <li>Home</li>
-                <li>Write a Review</li>
-                <li>Grow Your Business</li>
-                <li>FAQs</li>
-                <li>Support</li>
+                <li className="cursor-pointer">Home</li>
+                <li className="cursor-pointer">Write a Review</li>
+                <li className="cursor-pointer">Grow Your Business</li>
+                <li className="cursor-pointer">FAQs</li>
+                <Link to="/support" className="cursor-pointer">
+                  Support
+                </Link>
               </ul>
             </div>
 
@@ -56,9 +59,9 @@ export const Footer = () => {
             <div className="flex flex-col gap-4">
               <h1>Legal</h1>
               <ul className="text-[#A9C1DA] light-font flex flex-col gap-4">
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
-                <li>Cookie Preferences</li>
+                <li className="cursor-pointer">Privacy Policy</li>
+                <li className="cursor-pointer">Terms & Conditions</li>
+                <li className="cursor-pointer">Cookie Preferences</li>
               </ul>
             </div>
           </div>

@@ -1,10 +1,11 @@
 import { RiQuestionLine } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa";
+import { Rate } from "antd";
 
 export const SingleBusinessRatingBoard = () => {
   return (
-    <div className="w-[50%]  items-end flex">
+    <div className="w-[50%]   items-end flex">
       <div className="bg-[#F7F7F7] rounded-[13px] flex flex-col w-[640px] h-[223px] p-4">
         <div className="flex flex-row gap-2 items-center text-[16px] px-4 py-2 bg-white w-fit rounded-[100px] border border-[#C6CAD0]">
           <span className="text-[#002B56]">Excellent</span>{" "}
@@ -16,13 +17,14 @@ export const SingleBusinessRatingBoard = () => {
           <div className="flex flex-row gap-5 items-center ml-6 mt-5">
             <h1 className="bold text-[54px] text-[#031D3D]">4.7</h1>
             <div className="text-[16px] flex flex-col gap-2">
-              <span className="flex flex-row gap-1">
+              {/* <span className="flex flex-row gap-1">
                 <FaStar className="text-[22px] text-[#F3A218]" />
                 <FaStar className="text-[22px] text-[#F3A218]" />
                 <FaStar className="text-[22px] text-[#F3A218]" />
                 <FaStar className="text-[22px] text-[#F3A218]" />
                 <FaRegStar className="text-[24px] text-[#F3A218]" />
-              </span>
+              </span> */}
+              <Rate disabled defaultValue={4} style={{ color: "#F3A218" }} />
               <span className="text-[#002B56] light-font flex flex-row gap-1">
                 Based on <h3 className="bold">763 reviews</h3>
               </span>

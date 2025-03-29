@@ -3,7 +3,7 @@ import { FaRegStar } from "react-icons/fa";
 
 export const SingleReview = () => {
   return (
-    <di className="flex flex-col w-[383px] h-[302px] rounded-2xl px-4 py-6 justify-between border border-[#E3E5E8]">
+    <div className="flex flex-col w-[380px] h-[302px] rounded-2xl px-4 py-6 justify-between border border-[#E3E5E8]">
       <div className="flex flex-row justify-between items-start">
         <div className="flex flex-row gap-4 items-center">
           <span className="rounded-full text-[21px] bg-[#FFE8D4] text-[#FF7700] justify-center w-[61px] h-[61px] items-center flex">
@@ -32,6 +32,6 @@ export const SingleReview = () => {
         recommended!{" "}
         <button className="text-[#017BF6] ml-2 font-semibold">See more</button>
       </p>
-    </di>
+    </div>
   );
 };

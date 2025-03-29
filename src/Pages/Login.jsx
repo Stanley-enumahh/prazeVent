@@ -49,13 +49,13 @@ export const Login = ({ handleCloseModal }) => {
             {showPassword ? (
               <GoEye
                 onClick={toggleShowPassword}
-                className="text-[#9AA1AE] mr-3"
+                className="text-[#9AA1AE] mr-3 cursor-pointer"
                 size={22}
               />
             ) : (
               <FaRegEyeSlash
                 onClick={toggleShowPassword}
-                className="text-[#9AA1AE] mr-3"
+                className="text-[#9AA1AE] mr-3 cursor-pointer"
                 size={22}
               />
             )}

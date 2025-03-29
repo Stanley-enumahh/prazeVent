@@ -4,8 +4,8 @@ import { SingleBusinessRatingBoard } from "./SingleBusinessRatingBoard";
 
 export const SingleBusinessEnvironment = () => {
   return (
-    <div className="w-full justify-center flex ">
-      <div className="w-[88%] flex flex-col mt-[142px] gap-[120px]">
+    <div className="w-full justify-center flex mt-[142px]">
+      <div className="w-[88%] flex flex-col  h-fit gap-[120px]">
         <div className="flex flex-row justify-between w-full">
           <SingleBusinessDetailBoard />
           <SingleBusinessRatingBoard />
