@@ -7,7 +7,7 @@ import { HiOutlineFlag } from "react-icons/hi2";
 
 export const SingleReviewWithLikes = () => {
   return (
-    <di className="flex flex-col w-[383px] h-[360px] gap-5 rounded-2xl px-4 py-6 justify-between border border-[#E3E5E8]">
+    <div className="flex flex-col w-[383px] h-[360px] gap-5 rounded-2xl px-4 py-6 justify-between border border-[#E3E5E8]">
       <div className="flex flex-row justify-between items-start">
         <div className="flex flex-row gap-4 items-center">
           <span className="rounded-full text-[21px] bg-[#FFE8D4] text-[#FF7700] justify-center w-[61px] h-[61px] overflow-hidden items-center flex">
@@ -54,6 +54,6 @@ export const SingleReviewWithLikes = () => {
           <HiOutlineFlag className="text-[20px]" /> Report
         </span>
       </div>
-    </di>
+    </div>
   );
 };

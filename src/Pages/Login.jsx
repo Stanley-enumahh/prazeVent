@@ -32,7 +32,7 @@ export const Login = ({ handleCloseModal }) => {
             id="email"
             type="email"
             placeholder="Enter your email address"
-            className="border border-[#E3E5E8] placeholder:text-[#9AA1AE]  rounded-xl px-4 py-4 text-[16px]"
+            className="border border-[#E3E5E8] placeholder:text-[#9AA1AE]  rounded-xl px-4 py-4 text-[16px] outline-none"
           />
         </div>
         <div className="flex flex-col gap-3">
@@ -44,7 +44,7 @@ export const Login = ({ handleCloseModal }) => {
               id="password"
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
-              className=" placeholder:text-[#9AA1AE] outline-none border-none py-4"
+              className=" outline-none placeholder:text-[#9AA1AE] outline-none border-none py-4"
             />
             {showPassword ? (
               <GoEye

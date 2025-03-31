@@ -3,8 +3,10 @@ import { PiCoins } from "react-icons/pi";
 import verified from "../../assets/Vector (2).png";
 import { PiPencilSimpleLight } from "react-icons/pi";
 import { GoLink } from "react-icons/go";
+import { UseBusiness } from "./Contexts/SingleBusinessContext";
 
 export const SingleBusinessDetailBoard = () => {
+  const { handleModalOpen } = UseBusiness();
   return (
     <div className="w-[50%] flex flex-col gap-10">
       <span className="text-sm bold text-[#017BF6]">
@@ -34,7 +36,10 @@ export const SingleBusinessDetailBoard = () => {
       </div>
 
       <div className="flex flex-row gap-4">
-        <button className="px-[18px] py-[10px] bg-[#017BF6] rounded-[50px] text-white cursor-pointer text-[16px] light-font flex flex-row items-center gap-2">
+        <button
+          onClick={handleModalOpen}
+          className="px-[18px] py-[10px] bg-[#017BF6] rounded-[50px] text-white cursor-pointer text-[16px] light-font flex flex-row items-center gap-2"
+        >
           <span> Write a Review</span> <PiPencilSimpleLight size={22} />
         </button>
         <button className="px-[18px] py-[10px] border border-[#017BF6] rounded-[50px] text-[#017bf6] cursor-pointer text-[16px] light-font flex flex-row items-center gap-2">

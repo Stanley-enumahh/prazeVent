@@ -56,7 +56,7 @@ export const CompanyDetails = () => {
           </div>
         </div>
         <div className="w-[35%] h-[350px] rounded-2xl border border-[#E3E5E8]">
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
         </div>
       </div>
     </div>

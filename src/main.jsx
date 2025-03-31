@@ -8,11 +8,20 @@ import SingleBusinessPage from "./Pages/SingleBusinessPage/SingleBusinessPage.js
 import ExploreBusinessPage from "./Pages/ExploreBuinesses/ExploreBusinessPage.jsx";
 import SupportPage from "./Pages/Support/SupportPage.jsx";
 import { CategoryPage } from "./Pages/Category/CategoryPage.jsx";
+import { BusinessProvider } from "./Pages/SingleBusinessPage/Contexts/SingleBusinessContext.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
   { path: "/explore-businesses", element: <ExploreBusinessPage /> },
-  { index: true, path: "/stripe", element: <SingleBusinessPage /> },
+  {
+    index: true,
+    path: "/stripe",
+    element: (
+      <BusinessProvider>
+        <SingleBusinessPage />
+      </BusinessProvider>
+    ),
+  },
   { path: "/support", element: <SupportPage /> },
   { path: "/business-category", element: <CategoryPage /> },
 ]);
