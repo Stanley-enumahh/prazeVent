@@ -41,9 +41,9 @@ body {
   background-color: var(--color-deep);
 }
 
-.hero-header {
+/* .hero-header {
   font-weight: 600;
-}
+} */
 .button-weight {
   font-weight: 400;
 }
@@ -59,12 +59,12 @@ body {
   border: 1px solid #e3e5e8;
   gap: 0.5rem;
 }
-.single-business-logo-deskeop {
+/* .single-business-logo-deskeop {
   width: 84px;
   height: 84px;
   object-fit: cover;
   border-radius: 7px;
-}
+} */
 
 .bold {
   font-weight: 600;

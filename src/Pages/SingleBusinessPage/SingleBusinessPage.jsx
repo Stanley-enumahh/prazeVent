@@ -19,6 +19,7 @@ export default function SingleBusinessPage() {
         style={{
           position: "absolute",
           right: "0px",
+          top: "0",
           overflowY: "scroll",
           // background: "white",
           borderTopLeftRadius: "18px",
@@ -28,7 +29,7 @@ export default function SingleBusinessPage() {
         open={openWriteReview}
         footer={null}
         closable={false}
-        height={507}
+        height={607}
       >
         {/* <ReviewForm /> */}
         <ThankYouUi />

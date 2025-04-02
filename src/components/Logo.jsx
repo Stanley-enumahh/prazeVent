@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LogoIcon from "../../public/Group (1).png";
+import LogoIcon from "../../public/logo.png";
 const Logo = () => {
   return (
     <Link
