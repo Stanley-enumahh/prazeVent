@@ -7,7 +7,7 @@ import { AllReviewsContainer } from "./AllReviewsContainer";
 import { Modal } from "antd";
 import { UseBusiness } from "./Contexts/SingleBusinessContext";
 import { ReviewForm } from "./ReviewForm";
-import { ThankYouUi } from "./ThankYouUi";
+import { ThankYouUi } from "./ThankYouUI";
 
 export default function SingleBusinessPage() {
   const { openWriteReview } = UseBusiness();
